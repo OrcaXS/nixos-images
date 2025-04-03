@@ -33,6 +33,7 @@ in
   };
 
   config = {
+    zramSwap.enable = true;
     boot.initrd.compressor = "xz";
     # This is a variant of the upstream kexecScript that also allows embedding
     # a ssh key.
